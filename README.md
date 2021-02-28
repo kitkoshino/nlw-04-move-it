@@ -11,7 +11,7 @@
  </p>
 <br />
 
-### :computer: Aplicação
+# :computer: Aplicação
 
 - Tela do timer
 <p align="center">
