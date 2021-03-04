@@ -1,0 +1,90 @@
+@import '../variables';
+
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  background: $blue;
+  background-image: url('../../../public/icons/symbol.svg');
+  background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .loginInfo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 80px 0;
+    grid-column: 2;
+
+    > img {
+      width: 360px;
+      height: 76px;
+    }
+
+    .secondContainer {
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        color: $white;
+        font-family: 'Inter';
+        font-weight: 600;
+        line-height: 46px;
+        font-size: 1.8rem;
+      }
+
+      .loginText {
+        display: flex;
+        align-items: center;
+
+        > img {
+          width: 40px;
+          height: 40px;
+          margin-right: 25px;
+        }
+
+        span {
+          max-width: 254px;
+          color: $text-highlight;
+          font-family: 'Inter';
+        }
+      }
+
+      .loginInput {
+        width: 420px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        input {
+          height: 100%;
+          width: 80%;
+          border-radius: 5px 0px 0px 5px;
+          border: none;
+          color: $text-highlight;
+          font-size: 1.2rem;
+          padding: 20px;
+          background: linear-gradient(
+            90deg,
+            #4953b8 0%,
+            rgba(73, 83, 184, 0.2) 100%
+          );
+        }
+
+        button {
+          height: 100%;
+          width: 20%;
+          width: 80px;
+          background: #4953b8;
+          border-radius: 0px 5px 5px 0px;
+          border: none;
+        }
+      }
+    }
+  }
+}
