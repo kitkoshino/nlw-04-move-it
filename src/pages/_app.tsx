@@ -7,10 +7,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {isLogged 
+{/*       {isLogged 
         ? <Component {...pageProps} /> 
         : <Login />
-      }      
+      }  */}  
+      <Component {...pageProps} />    
     </>
   )
 }
